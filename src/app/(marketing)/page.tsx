@@ -27,7 +27,7 @@ export default function HomePage() {
             </SignUpButton>
         </section>
         <section className="bg-primary text-primary-foreground">
-            <div className="container py-16 flex flex-col justify-center gap-16 px-8 md:px-16">
+            <div className="container mx-auto py-16 flex flex-col justify-center gap-16">
                 <h2 className="text-3xl text-center text-balance">Trusted by the top modern companies</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-16">
                     <Link href='https://neon.tech/'>
@@ -60,11 +60,16 @@ export default function HomePage() {
             </div>
         </section>
 
-        <footer className="container pt-16 pb-8 flex flex-col sm:flex-row gap-8 sm:gap-4 justify-between items-start">
-            <Link href="/" className="pl-[6rem]">
-                <BrandLogo/>
-            </Link>
-            <div className="flex flex-col sm:flex-row gap-8">
+        <footer className="w-full pt-16 pb-8">
+
+            <div className="max-w-[1280px] mx-auto px-4 flex flex-col sm:flex-row gap-8 sm:gap-4 justify-between items-center">
+
+                <div className="flex flex-col items-center sm:items-start gap-4 flex-shrink-0">
+                    <Link href="/" className="block">
+                        <BrandLogo />
+                    </Link>
+                </div>
+
                 <div className="flex flex-col gap-8">
                     <FooterLinkGroup
                         title="Help"
